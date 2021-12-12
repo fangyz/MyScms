@@ -1,0 +1,12 @@
+D:\07-编程\SCMS\CommonHelp\bin\Debug\net5.0\CommonHelp.deps.json
+D:\07-编程\SCMS\CommonHelp\bin\Debug\net5.0\CommonHelp.dll
+D:\07-编程\SCMS\CommonHelp\bin\Debug\net5.0\ref\CommonHelp.dll
+D:\07-编程\SCMS\CommonHelp\bin\Debug\net5.0\CommonHelp.pdb
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\CommonHelp.csproj.AssemblyReference.cache
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\CommonHelp.GeneratedMSBuildEditorConfig.editorconfig
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\CommonHelp.AssemblyInfoInputs.cache
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\CommonHelp.AssemblyInfo.cs
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\CommonHelp.csproj.CoreCompileInputs.cache
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\CommonHelp.dll
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\ref\CommonHelp.dll
+D:\07-编程\SCMS\CommonHelp\obj\Debug\net5.0\CommonHelp.pdb

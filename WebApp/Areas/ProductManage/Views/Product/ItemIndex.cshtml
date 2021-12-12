@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/ExternalReference/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/ExternalReference/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/ExternalReference/bootstrap-3.4.1/js/bootstrap.js"></script>
+</head>
+<body>
+
+    <div class="container" style="margin:10px 10px 10px 10px;padding:10px 10px 10px 10px">
+        <form class="form-inline" role="form">
+            <div style="display:inline;margin-right:20px;">
+                <span>料号</span>
+                <input type="text" class="form-control" placeholder="" id="id_input_itemcode">
+            </div>
+
+            <div style="display: inline; margin-right: 20px;">
+                <span>名称</span>
+                <input type="text" class="form-control" placeholder="" id="id_input_itemname">
+            </div>
+
+            <div style="display: inline; margin-right: 20px;">
+                <span>创建人</span>
+                <input type="text" class="form-control" placeholder="" id="id_input_creatuser">
+            </div>
+
+            <div class="input-group" style="margin-left:10px;">
+                <button type="button" class="btn btn-primary" id="id_button_search" style="margin-right:15px;">查询</button>
+                <button type="button" class="btn btn-primary" id="id_button_add" data-toggle="modal" data-target="#modal_addchild">新增</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="container table-responsive" style="margin-top:20px">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr class="info" style="visibility: hidden" id="id_thead_bomList">
+                    <th>子料号</th>
+                    <th>名称</th>
+                    <th>数量</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="id_table_bomList"></tbody>
+        </table>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+    $("#id_button_search").click(function () {
+        var itemCode = $("#id_input_itemcode").val();
+        SearchBomByCode(itemCode);
+    });
+
+
+
+
+
+
+</script>
