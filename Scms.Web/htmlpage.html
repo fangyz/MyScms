@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="D:\07-编程\SCMS\WebApp\vue.global.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+   
+<div id="myapp">
+
+    <site-info v-for="site in sites" :id="site.id" :title="site.title"></site-info>
+    
+</div>
+
+    <script>
+        const Site = {
+            data() {
+                return {
+                    sites: [{ id: 1, title: "Google" }, { id: 2, title: "马巧" }, {id:3,title:"桂香"}]
+                }
+            }
+        }
+
+        const app = Vue.createApp(Site);
+
+        app.component("site-info", {
+            props: ["id", "title"],
+            template:'<h4>{{id}}-{{title}}</h4>'
+        })
+
+        app.mount('#myapp');
+        
+    </script>
+
+</body>
+</html>
+

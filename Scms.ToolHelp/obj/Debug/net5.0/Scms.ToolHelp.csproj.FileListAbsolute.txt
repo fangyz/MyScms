@@ -1,0 +1,12 @@
+D:\07-编程\SCMS\Scms.ToolHelp\bin\Debug\net5.0\Scms.ToolHelp.deps.json
+D:\07-编程\SCMS\Scms.ToolHelp\bin\Debug\net5.0\Scms.ToolHelp.dll
+D:\07-编程\SCMS\Scms.ToolHelp\bin\Debug\net5.0\ref\Scms.ToolHelp.dll
+D:\07-编程\SCMS\Scms.ToolHelp\bin\Debug\net5.0\Scms.ToolHelp.pdb
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\Scms.ToolHelp.csproj.AssemblyReference.cache
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\Scms.ToolHelp.GeneratedMSBuildEditorConfig.editorconfig
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\Scms.ToolHelp.AssemblyInfoInputs.cache
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\Scms.ToolHelp.AssemblyInfo.cs
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\Scms.ToolHelp.csproj.CoreCompileInputs.cache
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\Scms.ToolHelp.dll
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\ref\Scms.ToolHelp.dll
+D:\07-编程\SCMS\Scms.ToolHelp\obj\Debug\net5.0\Scms.ToolHelp.pdb

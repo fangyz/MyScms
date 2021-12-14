@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scms.Web", "WebApp\Scms.Web.csproj", "{66CAA907-14E5-401D-B295-9A562617E6E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scms.Web", "Scms.Web\Scms.Web.csproj", "{66CAA907-14E5-401D-B295-9A562617E6E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-App", "01-App", "{C02CB441-A2BE-4B4C-9E9A-35FF1E4FC8E1}"
 EndProject
@@ -13,13 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Model", "03-Model", "{08
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-ToolHelp", "04-ToolHelp", "{35DA5ADF-57B0-4C20-9071-7CB6C11F22F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessModel", "BusinessModel\BusinessModel.csproj", "{C7BF3E12-2E70-4474-8CFF-0BBBB8DD464D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scms.BusinessModel", "Scms.BusinessModel\Scms.BusinessModel.csproj", "{C7BF3E12-2E70-4474-8CFF-0BBBB8DD464D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbModel", "DbModel\DbModel.csproj", "{2C7C47E3-8B12-4270-BE95-2BC5229A800D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scms.DbModel", "Scms.DbModel\Scms.DbModel.csproj", "{2C7C47E3-8B12-4270-BE95-2BC5229A800D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonHelp", "CommonHelp\CommonHelp.csproj", "{78A25A5C-2377-421D-8248-533862B8FC61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scms.ToolHelp", "Scms.ToolHelp\Scms.ToolHelp.csproj", "{78A25A5C-2377-421D-8248-533862B8FC61}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreService", "CoreService\CoreService.csproj", "{10A8359A-D3DB-4E31-A6D2-466336CC0F84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scms.CoreService", "Scms.CoreService\Scms.CoreService.csproj", "{10A8359A-D3DB-4E31-A6D2-466336CC0F84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

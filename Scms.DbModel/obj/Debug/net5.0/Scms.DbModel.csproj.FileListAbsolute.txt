@@ -1,0 +1,12 @@
+D:\07-编程\SCMS\Scms.DbModel\bin\Debug\net5.0\Scms.DbModel.deps.json
+D:\07-编程\SCMS\Scms.DbModel\bin\Debug\net5.0\Scms.DbModel.dll
+D:\07-编程\SCMS\Scms.DbModel\bin\Debug\net5.0\ref\Scms.DbModel.dll
+D:\07-编程\SCMS\Scms.DbModel\bin\Debug\net5.0\Scms.DbModel.pdb
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\Scms.DbModel.csproj.AssemblyReference.cache
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\Scms.DbModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\Scms.DbModel.AssemblyInfoInputs.cache
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\Scms.DbModel.AssemblyInfo.cs
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\Scms.DbModel.csproj.CoreCompileInputs.cache
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\Scms.DbModel.dll
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\ref\Scms.DbModel.dll
+D:\07-编程\SCMS\Scms.DbModel\obj\Debug\net5.0\Scms.DbModel.pdb

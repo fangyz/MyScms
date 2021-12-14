@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6zIpg3WcgvbpTntCVy4PiVhA6/Raa6kPtsBrz5aHsms4P5bClU+epjSsSOaumRUabQbXTczvm4GYiCIoC5Lgfw==",
+  "success": true,
+  "projectFilePath": "D:\\07-编程\\SCMS\\Scms.ToolHelp\\Scms.ToolHelp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

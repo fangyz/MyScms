@@ -1,0 +1,12 @@
+D:\07-编程\SCMS\Scms.BusinessModel\bin\Debug\net5.0\Scms.BusinessModel.deps.json
+D:\07-编程\SCMS\Scms.BusinessModel\bin\Debug\net5.0\Scms.BusinessModel.dll
+D:\07-编程\SCMS\Scms.BusinessModel\bin\Debug\net5.0\ref\Scms.BusinessModel.dll
+D:\07-编程\SCMS\Scms.BusinessModel\bin\Debug\net5.0\Scms.BusinessModel.pdb
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\Scms.BusinessModel.csproj.AssemblyReference.cache
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\Scms.BusinessModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\Scms.BusinessModel.AssemblyInfoInputs.cache
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\Scms.BusinessModel.AssemblyInfo.cs
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\Scms.BusinessModel.csproj.CoreCompileInputs.cache
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\Scms.BusinessModel.dll
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\ref\Scms.BusinessModel.dll
+D:\07-编程\SCMS\Scms.BusinessModel\obj\Debug\net5.0\Scms.BusinessModel.pdb
