@@ -12,6 +12,9 @@ namespace Scms.ToolHelp
 
         public static T GetFromJson<T>(string jsonStr)
         {
+            if (string.IsNullOrEmpty(jsonStr?.Trim()))
+                return default(T);
+
             return JsonConvert.DeserializeObject<T>(jsonStr);
         }
     }
