@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="~/ExternalReference/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" />
-    <script src="~/ExternalReference/jquery/jquery-3.6.0.min.js"></script>
-    <script src="~/ExternalReference/bootstrap-3.4.1/js/bootstrap.js"></script>
-    <script src="~/ExternalReference/vue/vue.global.js"></script>
+    <link href="~/reference/bootstrap-3.4.1/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/reference/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/reference/bootstrap-3.4.1/js/bootstrap.js"></script>
+    <script src="~/reference/vue/vue.global.js"></script>
 </head>
 <body>
 
@@ -66,9 +66,9 @@
                         <label v-else-if="site.ItemType==3">成品料号</label>
                     </td>
                     <td>{{site.CreateUser}}</td>
-                    <td>{{site.CreateTime}}</td>
+                    <td>{{site.CreateTime.substring(0,10)}}</td>
                     <td>{{site.UpdateUser}}</td>
-                    <td>{{site.UpdateTime}}</td>
+                    <td>{{site.UpdateTime.substring(0,10)}}</td>
                 </tr>
             </tbody>
         </table>
@@ -105,10 +105,11 @@
     });
 
     function SearchBomByCode(itemCode, itemName, createUser) {
+        debugger
         $.ajax({
             type: "GET",
             url: "/ProductManage/Product/SearchItem",
-            data: { "searchString": { "ItemCode": itemCode, "ItemName": itemName, "CreateUser": createUser } },
+            data: { "ItemCode": itemCode, "ItemName": itemName, "CreateUser":createUser},
             dataType: "JSON",
             success: function (resObj) {
                 debugger

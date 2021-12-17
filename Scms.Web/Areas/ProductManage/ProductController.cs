@@ -15,9 +15,10 @@ namespace Scms.Web.Areas.ProductManage
             return View();
         }
 
-        public string SearchItem(string searchString)
+        [HttpGet]
+        public string SearchItem(string itemCode,string itemName,string createUser)
         {
-            SearchItemModel model = JsonHelp.GetFromJson<SearchItemModel>(searchString);
+            SearchItemModel model = new SearchItemModel { ItemCode = itemCode, ItemName = itemName, CreateUser = createUser };
             return JsonHelp.ToJson(ItemService.SearchItem(model));
         }
         #endregion
