@@ -1,5 +1,6 @@
 ﻿using CoreService.ProductManage;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Scms.BusinessModel;
 using Scms.CoreService;
 using Scms.ToolHelp;
@@ -9,6 +10,13 @@ namespace Scms.Web.Areas.ProductManage
     [Area("ProductManage")]
     public class ProductController : Controller
     {
+        public ProductController(ILogger<ProductController> logger)
+        {
+            BomService.Logger = logger;
+            ItemService.Logger = logger;
+        }
+
+
         #region 料号管理
         public IActionResult ItemIndex()
         {

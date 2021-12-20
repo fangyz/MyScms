@@ -166,3 +166,7 @@ D:\07-编程\SCMS\Scms.Web\obj\Debug\net5.0\Scms.Web.RazorTargetAssemblyInfo.cs
 D:\07-编程\SCMS\Scms.Web\obj\Debug\net5.0\Scms.Web.Views.pdb
 D:\07-编程\SCMS\Scms.Web\obj\Debug\net5.0\Scms.Web.csproj.CopyComplete
 D:\07-编程\SCMS\Scms.Web\obj\Debug\net5.0\Scms.Web.genruntimeconfig.cache
+D:\07-编程\SCMS\Scms.Web\bin\Debug\net5.0\Config\nlog.config
+D:\07-编程\SCMS\Scms.Web\bin\Debug\net5.0\NLog.dll
+D:\07-编程\SCMS\Scms.Web\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+D:\07-编程\SCMS\Scms.Web\bin\Debug\net5.0\NLog.Web.AspNetCore.dll

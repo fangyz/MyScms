@@ -1,4 +1,5 @@
-﻿using Scms.BusinessModel;
+﻿using Microsoft.Extensions.Logging;
+using Scms.BusinessModel;
 using Scms.ToolHelp;
 using System;
 using System.Collections.Generic;
@@ -8,11 +9,13 @@ using System.Threading.Tasks;
 
 namespace Scms.CoreService
 {
-    public static class ItemService
+    public static  class ItemService
     {
+        public static ILogger<object> Logger;
 
         public static ResultModel SearchItem(SearchItemModel model)
         {
+            
             using(var dbContext=new ScmsDbContext())
             {
                 var list = dbContext.Base_ItemInfo.Where(s=>s.IsDelete==false);

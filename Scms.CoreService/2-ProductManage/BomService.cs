@@ -1,4 +1,5 @@
-﻿using Scms.BusinessModel;
+﻿using Microsoft.Extensions.Logging;
+using Scms.BusinessModel;
 using Scms.CoreService;
 using Scms.DbModel;
 using Scms.ToolHelp;
@@ -8,8 +9,10 @@ using System.Linq;
 
 namespace CoreService.ProductManage
 {
-    public static  class BomService
+    public static class BomService
     {
+        public static ILogger<object> Logger;
+
         /// <summary>
         /// 通过物料编码查询bom
         /// </summary>
