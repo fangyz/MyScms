@@ -37,14 +37,12 @@ namespace Scms.Web.Areas.Base
 
         public IActionResult Index()
         {
-            ViewBag.Message = "欢迎使用财务模块";
 
             return View();
         }
         public IActionResult Top()
         {
             ViewBag.UserName = "超级管理员";
-            ViewBag.AvailableBalance = "8888.00";
             return View();
         }
         public IActionResult Left()
