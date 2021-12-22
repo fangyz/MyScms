@@ -55,6 +55,8 @@ namespace Scms.Web.Areas.Base
         }
         public IActionResult Footer()
         {
+
+
             return View();
         }
     }

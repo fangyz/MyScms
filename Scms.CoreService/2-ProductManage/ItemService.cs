@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Scms.BusinessModel;
+using Scms.DbModel;
 using Scms.ToolHelp;
 using System;
 using System.Collections.Generic;
@@ -32,5 +33,12 @@ namespace Scms.CoreService
                 return new ResultModel() { ResultObj = itemList, IsSuccess = true };
             }
         }
+
+        public static ResultModel AddItem(Base_ItemInfo ItemInfo)
+        {
+            //新增物料
+            return new ResultModel { IsSuccess = true };
+        }
+
     }
 }

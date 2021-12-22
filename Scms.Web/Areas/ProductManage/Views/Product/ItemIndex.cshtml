@@ -30,7 +30,7 @@
 
             <div class="input-group" style="margin-left:10px;">
                 <button type="button" class="btn btn-primary" id="id_button_search" style="margin-right:15px;">查询</button>
-                <button type="button" class="btn btn-primary" id="id_button_add" data-toggle="modal" data-target="#modal_addchild">新增</button>
+                <button type="button" class="btn btn-primary" id="id_button_add" data-toggle="modal" data-target="#id_modal_additem">新增</button>
             </div>
         </form>
     </div>
@@ -65,8 +65,8 @@
                         <label v-else-if="site.ItemType==2">模块料号</label>
                         <label v-else-if="site.ItemType==3">成品料号</label>
                     </td>
+                    <td>{{site.CreateUser}}</td>
                     <td>{{site.CreateTime.substring(0,10)}}</td>
-                    <td>{{site.CreateTime}}</td>
                     <td>{{site.UpdateUser}}</td>
                     <td>{{site.UpdateTime.substring(0,10)}}</td>
                 </tr>
@@ -75,6 +75,61 @@
     </div>
 
 
+
+    <!-- 模态框，新增物料 -->
+    <div class="modal fade" id="id_modal_additem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        新增料号
+                    </h4>
+                </div>
+
+                <form method="post" >
+                    <div class="modal-body">
+                        <div class="form-group form-inline">
+                            <label>编码</label>
+                            <input class="form-control" style="margin-left:5px" id="id_form_itemcode" />
+                            <label style="margin-left:30px">名称</label>
+                            <input class="form-control" style="margin-left:5px" id="id_form_itemname" />
+                        </div>
+
+                        <div class="form-group form-inline">
+                            <label>规格</label>
+                            <input class="form-control" style="margin-left:5px" id="id_form_specifications" />
+                            <label style="margin-left:30px">品牌</label>
+                            <input class="form-control" style="margin-left:5px" id="id_form_brand" />
+                        </div>
+
+                        <div class="form-group form-inline">
+                            <label>图号</label>
+                            <input class="form-control" style="margin-left:5px" id="id_form_pictureno" />
+                            <label style="margin-left:30px">类型</label>
+                            <select name="ItemType" id="id_form_itemtype" class="form-control" style="margin-left:5px">
+                                <option value=1>零件料号</option>
+                                <option value=2>模块料号</option>
+                                <option value=3>成品料号</option>
+                            </select>
+                        </div>
+                        @Html.AntiForgeryToken()
+
+                        <div class="modal-footer">
+                            <div class="form-group">
+                                <button class="btn btn-primary" onclick="AddItem()">提交</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
 
@@ -124,5 +179,31 @@
         });
     }
 
+    function AddItem() {
+        var itemCode = $("#id_form_itemcode").val();
+        var itemName = $("#id_form_itemname").val();
+        var specifications = $("#id_form_specifications").val();
+        var brand = $("#id_form_brand").val();
+        var pictureNo = $("#id_form_pictureno").val();
+        var itemType = $("#id_form_itemtype").val();
+        var xsfr = $('input[name="__RequestVerificationToken"]').val();
+        debugger
+        $.ajax({
+            type: "POST",
+            url: "/ProductManage/Product/AddItem",
+            data: { "__RequestVerificationToken": xsfr,"ItemCode": itemCode, "ItemName": itemName, "Specifications": specifications, "Brand": brand, "PictureNo": pictureNo, "ItemType": itemType},
+            dataType: "JSON",
+            success: function (resObj) {
+                debugger
+                if (resObj.IsSuccess) {
+                    $("#id_thead_bomList").css("visibility", "visible");
+                    vm.itemList = resObj.ResultObj;
+                } else {
+                    alert(resObj.Message);
+                }
+
+            }
+        });
+    }
 
 </script>
