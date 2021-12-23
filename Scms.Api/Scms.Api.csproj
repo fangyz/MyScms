@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scms.BusinessModel\Scms.BusinessModel.csproj" />
+    <ProjectReference Include="..\Scms.CoreService\Scms.CoreService.csproj" />
+    <ProjectReference Include="..\Scms.ToolHelp\Scms.ToolHelp.csproj" />
+  </ItemGroup>
+
+</Project>
