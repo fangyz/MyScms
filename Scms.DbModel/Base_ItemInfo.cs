@@ -16,6 +16,8 @@ namespace Scms.DbModel
         public DateTime CreateTime { get; set; }
         public string UpdateUser { get; set; }
         public DateTime UpdateTime { get; set; }
+        //[Timestamp]
+        public int RowVersion { get; set; }
         public bool IsDelete { get; set; }
         public string DeleteUser { get; set; }
         public DateTime? DeleteTime { get; set; }

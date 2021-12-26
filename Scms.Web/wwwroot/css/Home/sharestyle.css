@@ -54,7 +54,7 @@ body{
 	display: inline-block;
 	width: 21px;
 	height: 15px;
-	background: url(../../images/IndexStyle/icon_4.png) no-repeat;
+	background: url(../../images/Home/icon_4.png) no-repeat;
 	margin-left: 10px;
 	margin-right: 15px;
 	position: relative;
@@ -110,7 +110,7 @@ body{
 	background-color: #fff;
 }
 	.nav_out i {
-		background-image: url(../../images/IndexStyle/f_03.png);
+		background-image: url(../../images/Home/f_03.png);
 		background-repeat: no-repeat;
 		background-position: center top;
 		width: 14px;
@@ -163,13 +163,13 @@ body{
 .fucnbx span a:hover { color:#ceebff;
 }
 	.fucnbx span .i1 {
-		background: url(../../images/IndexStyle/icon_5.png) no-repeat;
+		background: url(../../images/Home/icon_5.png) no-repeat;
 	}
-.fucnbx span .i2{
-	background:url(../../images/IndexStyle/icon_6.png) no-repeat;
-}
+	.fucnbx span .i2 {
+		background: url(../../images/Home/icon_6.png) no-repeat;
+	}
 	.fucnbx span .i3 {
-		background: url(../../images/IndexStyle/icon_7.png) no-repeat;
+		background: url(../../images/Home/icon_7.png) no-repeat;
 	}
 .leftbar{
 	float:left;
@@ -195,19 +195,19 @@ body{
 }
 
 .leftbar .head1 {
-	background: url(../../images/IndexStyle/icon_9.png) no-repeat 0px 13px;
+	background: url(../../images/Home/icon_9.png) no-repeat 0px 13px;
 	height: 45px;
 	line-height: 45px;
 	padding-left: 30px;
 }
 .leftbar .head2 {
-	background: url(../../images/IndexStyle/icon_10.png) no-repeat 0px 13px;
+	background: url(../../images/Home/icon_10.png) no-repeat 0px 13px;
 	height: 45px;
 	line-height: 45px;
 	padding-left: 30px;
 }
 .leftbar .head3 {
-	background: url(../../images/IndexStyle/icon_11.png) no-repeat 0px 13px;
+	background: url(../../images/Home/icon_11.png) no-repeat 0px 13px;
 	height: 45px;
 	line-height: 45px;
 	padding-left: 30px;
@@ -216,7 +216,7 @@ body{
 
 .rightmenu {
 	display: inline-block;
-	background: url(../../images/IndexStyle/h_12.png) no-repeat;
+	background: url(../../images/Home/h_12.png) no-repeat;
 	width: 9px;
 	height: 9px;
 	position: absolute;
@@ -225,7 +225,7 @@ body{
 }
 .rightmenu1 {
 	display: inline-block;
-	background: url(../../images/IndexStyle/icon_12.png) no-repeat;
+	background: url(../../images/Home/icon_12.png) no-repeat;
 	width: 9px;
 	height: 9px;
 	position: absolute;
@@ -234,7 +234,7 @@ body{
 }	
 .box_n a{ display:block; height:37px; line-height:37px; font-size:14px; color:#858585; padding-left:58px;}
 	.box_n a:hover, .nav_sub {
-		background: url(../../images/IndexStyle/icon_8.png) repeat-x;
+		background: url(../../images/Home/icon_8.png) repeat-x;
 		color: #fff !important;
 	}
 .box_n span{color:#f20000;}

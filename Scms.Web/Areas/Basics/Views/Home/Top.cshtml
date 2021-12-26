@@ -19,7 +19,8 @@
             padding: 0px;
         }
     </style>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/reference/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         //控制Left视图中菜单模块的显示
         function showLeftList(divId) {
@@ -27,14 +28,13 @@
         }        //菜单点击高亮显示
         $(function () {
             $(".nav_list ul li a").click(function () {
-                //$(".nav_list ul li a").css("color", "#ceebff");
-                //$(this).css("color", "yellow");
                 $(".nav_list ul li a").css("background-color", "");
                 $(".nav_list ul li a").css("color", "#ceebff");
                 $(this).css("background-color", "#66d354");
                 $(this).css("color", "white");
             });
         });
+
     </script>
 </head>
 <body>

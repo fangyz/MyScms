@@ -14,6 +14,7 @@ namespace Scms.Web.Areas.ProductManage
         public ProductController(ILogger<ProductController> logger)
         {
             BomService.Logger = logger;
+            //ItemService.dbContext = dbContext;
             ItemService.Logger = logger;
         }
 
@@ -32,7 +33,7 @@ namespace Scms.Web.Areas.ProductManage
         }
 
         /// <summary>
-        /// 新增料号
+        /// 新增物料
         /// </summary>
         /// <returns></returns>
         [HttpPost]
@@ -40,6 +41,15 @@ namespace Scms.Web.Areas.ProductManage
         public string AddItem(Base_ItemInfo item)
         {
             return JsonHelp.ToJson(ItemService.AddItem(item));
+        }
+        /// <summary>
+        /// 编辑物料
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public string EditItem(Base_ItemInfo item)
+        {
+            return JsonHelp.ToJson(ItemService.EditItem(item));
         }
 
         #endregion
