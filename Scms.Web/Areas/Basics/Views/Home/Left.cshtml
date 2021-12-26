@@ -56,53 +56,46 @@
 <body>
     <div class="leftbar" id="divFinancial">
         <dl>
-            <dt id="dt_ulChannel" class="head2" onclick='ShowMenuList("ulChannel")'>物料管理</dt>
-            <ul class="box_n" id="ulChannel">
+            <dt id="dt_ul_product" class="head2" onclick='ShowMenuList("ul_product")'>物料管理</dt>
+            <ul class="box_n" id="ul_product">
                 <li><a href="#" onclick="goNewPage('/ProductManage/Product/ItemIndex','料号管理');">料号管理</a></li>
                 <li><a target="mainFrame" id="channelManage" onclick="goNewPage('/ProductManage/Product/BomIndex','Bom查询');">BOM维护</a></li>
                 <li><a href="#">整机BOM查询</a></li>
             </ul>
         </dl>
         <dl>
-            <dt id="dt_ulFinancial" class="head1" onclick='ShowMenuList("ulFinancial")'>工单管理</dt>
-            <ul class="box_n" id="ulFinancial" style="display: none;">
-                <li><a href="#">财务流水</a></li>
-                <li><a href="#">提单对账</a></li>
-                <li><a href="#">运单对账</a></li>
-                <li><a href="#">异常费用对账</a></li>
-                <li><a href="#">充值记录</a></li>
+            <dt id="dt_ul_asfr" class="head1" onclick='ShowMenuList("ul_asfr")'>工单管理</dt>
+            <ul class="box_n" id="ul_asfr" style="display: none;">
+                <li><a href="#">工单查询</a></li>
+                <li><a href="#">工单维护</a></li>
+                <li><a href="#">批量结案</a></li>
+                <li><a href="#">供需对比</a></li>
             </ul>
         </dl>
         <dl>
-            <dt id="dt_ulFinancial" class="head1" onclick='ShowMenuList("ulFinancial")'>请购管理</dt>
-            <ul class="box_n" id="ulFinancial" style="display: none;">
-                <li><a href="#">财务流水</a></li>
-                <li><a href="#">提单对账</a></li>
-                <li><a href="#">运单对账</a></li>
-                <li><a href="#">异常费用对账</a></li>
-                <li><a href="#">充值记录</a></li>
+            <dt id="dt_ul_pr" class="head1" onclick='ShowMenuList("ul_pr")'>请购管理</dt>
+            <ul class="box_n" id="ul_pr" style="display: none;">
+                <li><a href="#">请购管理</a></li>
+
             </ul>
         </dl>
 
         <dl>
-            <dt id="dt_ulFinancial" class="head1" onclick='ShowMenuList("ulFinancial")'>采购管理</dt>
-            <ul class="box_n" id="ulFinancial" style="display: none;">
-                <li><a href="#">财务流水</a></li>
-                <li><a href="#">提单对账</a></li>
-                <li><a href="#">运单对账</a></li>
-                <li><a href="#">异常费用对账</a></li>
-                <li><a href="#">充值记录</a></li>
+            <dt id="dt_ul_purchase" class="head1" onclick='ShowMenuList("ul_purchase")'>采购管理</dt>
+            <ul class="box_n" id="ul_purchase" style="display: none;">
+                <li><a href="#">待转采购</a></li>
+                <li><a href="#">供应商维护</a></li>
+                <li><a href="#">核价管理</a></li>
+                <li><a href="#">订单生成</a></li>
+                <li><a href="#">对账管理</a></li>
             </ul>
         </dl>
 
         <dl>
-            <dt id="dt_ulFinancial" class="head1" onclick='ShowMenuList("ulFinancial")'>仓库管理</dt>
-            <ul class="box_n" id="ulFinancial" style="display: none;">
+            <dt id="dt_ul_warehouse" class="head1" onclick='ShowMenuList("ul_warehouse")'>仓库管理</dt>
+            <ul class="box_n" id="ul_warehouse" style="display: none;">
                 <li><a href="#">入库管理</a></li>
                 <li><a href="#">出库管理</a></li>
-                <li><a href="#">运单对账</a></li>
-                <li><a href="#">异常费用对账</a></li>
-                <li><a href="#">充值记录</a></li>
             </ul>
         </dl>
 

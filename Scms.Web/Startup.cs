@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Scms.DbModel;
 
-namespace WebApp
+namespace Scms.Web
 {
     public class Startup
     {
@@ -20,7 +22,7 @@ namespace WebApp
         {
             services.AddControllersWithViews();
             //Ìí¼Ó·þÎñ
-            //services.AddDbContext<ScmsDbContext>(s=>s.UseSqlServer("name=ConnectionStrings:SCMS"));
+            services.AddDbContext<ScmsDbContext>(s => s.UseSqlServer("name=ConnectionStrings:SCMS"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,9 +41,6 @@ namespace WebApp
             app.UseRouting();
 
             app.UseAuthorization();
-
-
-
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,5 +1,4 @@
-﻿using CoreService.ProductManage;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Scms.BusinessModel;
 using Scms.CoreService;
@@ -11,11 +10,14 @@ namespace Scms.Web.Areas.ProductManage
     [Area("ProductManage")]
     public class ProductController : Controller
     {
-        public ProductController(ILogger<ProductController> logger)
+        public ProductController(ILogger<ProductController> logger,ScmsDbContext scmsDbContext)
         {
-            BomService.Logger = logger;
-            //ItemService.dbContext = dbContext;
-            ItemService.Logger = logger;
+            ItemService.dbContext = scmsDbContext;
+            ItemService.log = logger;
+
+            BomService.dbContext = scmsDbContext;
+            BomService.log = logger;
+
         }
 
 
